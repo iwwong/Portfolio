@@ -54,9 +54,18 @@ h2{
   padding-bottom: 20px;
 }
 
+h2.title {
+  font-size: 26px;
+  padding-bottom: 0px;
+}
+
 h3 {
   font-size: 20px;
   letter-spacing: 0.1em;
+}
+
+h3.subtitle {
+  font-size: 14px;
 }
 
 h4 {
