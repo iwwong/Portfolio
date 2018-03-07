@@ -34,7 +34,7 @@ a.menu-item:hover, a.menu-item:focus, a.menu-item:after {
 
 /* Styling for the Headings and Text */
 
-h1, h2, h3{
+h1, h2, h3, h5 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -55,8 +55,10 @@ h2{
 }
 
 h2.title {
-  font-size: 26px;
+  font-size: 28px;
+  font-weight: 700;
   padding-bottom: 0px;
+  color: #92A8D1;
 }
 
 h3 {
@@ -85,6 +87,12 @@ code {
   padding: 0.5em 0.75em;
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+h5 {
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  font-size: 16px;
 }
 
 /* Styling for Sections */
@@ -137,6 +145,21 @@ input[type=text]:focus {
 }
 
 /* Combined Elements */
+
+.project-header-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding-top: 2em;
+}
+
+.project-description {
+  padding-top: 2em;
+  line-height: 2;
+}
+
 /* Credit: Footer Stick to Bottom of Page: https://teamtreehouse.com/community/how-to-make-the-footer-to-stick-at-the-bottom-the-page */
 footer {
   position: absolute;
