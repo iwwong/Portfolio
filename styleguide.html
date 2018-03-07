@@ -258,26 +258,83 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                 <h3>Project Thumbnail</h3>
 
                 <h4>CSS Selector:</h4>
-                <p></p>
+                <p>.project, .project-thumbnail, .img-responsive, .thumbnail-title </p>
 
                 <h4>Sample Code:</h4>
-                <code></code>
+                <code>
+                  &lt;div class="row"&gt;<br>
+                    &lt;div class="col-lg-6 project"&gt;<br>
+                      &lt;a href="#"&gt;<br>
+                          &lt;img class="project-thumbnail img-responsive" src="img/fantuan-thumbnail.png" alt="Fantuan Delivery Project"&gt;<br>
+                      &lt;/a&gt;<br>
+                      &lt;h5 class="thumbnail-title">FANTUAN DELIVERY&lt;/h5&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="col-lg-6 project"&gt;<br>
+                      &lt;a href="#"&gt;<br>
+                          &lt;img class="project-thumbnail img-responsive" src="img/rootsfruits-thumbnail.png" alt="Roots and Fruits Social Media"&gt;<br>
+                      &lt;/a&gt;<br>
+                      &lt;h5 class="thumbnail-title">ROOTS AND FRUITS&lt;/h5&gt;<br>
+                    &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+
+                  &lt;div class="row"&gt;<br>
+                    &lt;div class="col-lg-6 project"&gt;<br>
+                      &lt;a href="#"&gt;<br>
+                          &lt;img class="project-thumbnail img-responsive" src="img/issposters-thumbnail.png" alt="Global Student Centre Poster"&gt;<br>
+                      &lt;/a&gt;<br>
+                      &lt;h5 class="thumbnail-title">GLOBAL STUDENT CENTRE&lt;/h5&gt;<br>
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="col-lg-6 project"&gt;<br>
+                      &lt;a href="#"&gt;<br>
+                          &lt;img class="project-thumbnail img-responsive" src="img/studyabroad-thumbnail.png" alt="SFU Study Abroad Snapchat"&gt;<br>
+                      &lt;/a&gt;<br>
+                      &lt;h5 class="thumbnail-title">SFU STUDY ABROAD&lt;/h5&gt;<br>
+                    &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+                </code>
 
                 <h4>Rendered Element:</h4>
                 <div class="row">
-                  <div class="col-lg-6 project-thumbnail-overlay">
+                  <div class="col-lg-6 project">
                     <a href="#">
-                      <img class="project-thumbnail img-responsive" src="img/fantuan-thumbnail.png" alt="grey box placeholder thumbnail">
+                        <img class="project-thumbnail img-responsive" src="img/fantuan-thumbnail.png" alt="Fantuan Delivery Project">
                     </a>
+                    <h5 class="thumbnail-title">FANTUAN DELIVERY</h5>
                   </div>
-                  <div class="col-lg-6">
+                  <!-- <div class="col-lg-6">
                     <a href="#">
                       <div class="tint">
                       <img class="project-thumbnail img-responsive" src="img/fantuan-thumbnail.png" alt="grey box placeholder thumbnail">
                       <div class="overlay">
-                        <h3 class="text-overlay">FANTUAN DELIVERY</h3></div>
+                        <h3>FANTUAN DELIVERY</h3>
+                      </div>
                     </div>
                     </a>
+                  </div> -->
+
+                  <div class="col-lg-6 project">
+                    <a href="#">
+                        <img class="project-thumbnail img-responsive" src="img/rootsfruits-thumbnail.png" alt="Roots and Fruits Social Media">
+                    </a>
+                    <h5 class="thumbnail-title">ROOTS AND FRUITS</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-6 project">
+                    <a href="#">
+                        <img class="project-thumbnail img-responsive" src="img/issposters-thumbnail.png" alt="Global Student Centre Poster">
+                    </a>
+                    <h5 class="thumbnail-title">GLOBAL STUDENT CENTRE</h5>
+                  </div>
+
+                  <div class="col-lg-6 project">
+                    <a href="#">
+                        <img class="project-thumbnail img-responsive" src="img/studyabroad-thumbnail.png" alt="SFU Study Abroad Snapchat">
+                    </a>
+                    <h5 class="thumbnail-title">SFU STUDY ABROAD</h5>
                   </div>
                 </div>
 
@@ -328,7 +385,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                   &lt;/p&gt;<br>
                   &lt;/div&gt;<br>
                   &lt;div class="col-lg-8"&gt;<br>
-                  &lt;img class="project-header-image img-response" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens"&gt;<br>
+                  &lt;img class="project-image img-response" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens"&gt;<br>
                   &lt;/div&gt;<br>
                   &lt;/div&gt;<br>
                 </code>
@@ -357,7 +414,21 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                     </p>
                   </div>
                   <div class="col-lg-8">
-                    <img class="project-header-image img-responsive" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens">
+                    <img class="project-image img-responsive" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens">
+                  </div>
+                </div>
+              </section>
+
+              <section class="element">
+                <h3>Colours</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <span class="circle darkgrey"></span>
+                    <p>Text Colour</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <span class="circle blue"></span>
+                    <p>Alternate Text Colour</p>
                   </div>
                 </div>
               </section>
