@@ -95,6 +95,15 @@ h5 {
   font-size: 16px;
 }
 
+h5.process-title {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+p.process-analysis {
+  line-height: 2;
+}
+
 /* Styling for Sections */
 
 .element {
@@ -303,7 +312,7 @@ h5.thumbnail-title {
 
 /* Credit: Footer Stick to Bottom of Page: https://teamtreehouse.com/community/how-to-make-the-footer-to-stick-at-the-bottom-the-page */
 footer {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   bottom: 0;
   height: 25px;
@@ -311,5 +320,28 @@ footer {
   background-color: #92A8D1;
   color: #FFF;
   text-align: center;
+  font-size: 14px; */
+}
+
+.footer-style {
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+  height: 25px;
+  width: 100%;
+  background-color: #92A8D1;
+  color: #FFF;
+  text-align: center;
   font-size: 14px;
+}
+
+/* Project Page Styling */
+
+.project-section {
+  padding-bottom: 3rem;
+}
+
+.persona-image {
+  max-width: 100%;
+  height: auto;
 }
