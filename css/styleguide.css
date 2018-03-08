@@ -43,7 +43,7 @@ h1 {
   letter-spacing: 0.15em;
   text-align: center;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   color: rgb(50,50,50);
 }
 
@@ -64,6 +64,12 @@ h2.title {
 h3 {
   font-size: 20px;
   letter-spacing: 0.1em;
+}
+
+h3.header-subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #92A8D1;
 }
 
 h3.subtitle {
@@ -98,6 +104,10 @@ h5 {
 h5.process-title {
   font-size: 20px;
   letter-spacing: 0.2em;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
 }
 
 p.process-analysis {
@@ -335,6 +345,12 @@ footer {
   font-size: 14px;
 }
 
+.footer-link, .footer-link:hover, .footer-link:focus{
+  text-decoration: none;
+  color: white;
+}
+
+
 /* Project Page Styling */
 
 .project-section {
@@ -344,4 +360,12 @@ footer {
 .persona-image {
   max-width: 100%;
   height: auto;
+}
+
+/* About Page Styling */
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  /* transition: opacity .3s ease-out; */
 }
