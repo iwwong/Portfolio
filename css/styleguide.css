@@ -362,6 +362,18 @@ footer {
   height: auto;
 }
 
+.text-middle {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media (max-width:992px) {
+  .text-middle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /* About Page Styling */
 
 .about-image {
