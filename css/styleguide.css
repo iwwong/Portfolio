@@ -1,7 +1,14 @@
+html {
+  position: relative;
+  height: 97%;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  min-height: 100%;
   margin-left: 15%;
   margin-right: 15%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Styling for Navigation */
@@ -166,7 +173,7 @@ input[type=text]:focus {
 /* Combined Elements */
 
 .project {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .project-thumbnail {
@@ -184,7 +191,7 @@ input[type=text]:focus {
   bottom: 0;
   /* left: 0; */
   /* right: 0; */
-  height: 94%;
+  height: 89%;
   width: 94%;
   opacity: 0.5;
   transition: .5s ease;
@@ -253,25 +260,17 @@ h3.thumbnail-subtitle {
   background-color: #92A8D1;
 }
 
-/* Credit: Footer Stick to Bottom of Page: https://teamtreehouse.com/community/how-to-make-the-footer-to-stick-at-the-bottom-the-page */
+/* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
 footer {
-  /* position: absolute;
-  left: 0;
-  bottom: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   height: 25px;
   width: 100%;
-  background-color: #92A8D1;
-  color: #FFF;
-  text-align: center;
-  font-size: 14px; */
 }
 
 .footer-style {
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
-  height: 25px;
-  width: 100%;
   background-color: #92A8D1;
   color: #FFF;
   text-align: center;
@@ -287,7 +286,7 @@ footer {
 /* Project Page Styling */
 
 .project-section {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .persona-image {
@@ -304,6 +303,12 @@ footer {
   .text-middle {
     margin-left: 0;
     margin-right: 0;
+  }
+  .project-image {
+    order: 1;
+  }
+  .project-info {
+    order: 2;
   }
 }
 
