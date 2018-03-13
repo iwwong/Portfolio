@@ -39,6 +39,32 @@ a.menu-item:hover, a.menu-item:focus, a.menu-item:after {
   transition: 0.3s;
 }
 
+/* Styling for Mobile Navigation */
+.mobile-nav {
+  display: none;
+}
+
+h4.menu-item {
+  color: #92A8D1;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  border: 2px solid #92A8D1;
+  padding: 0.4em 1.5em;
+}
+
+@media (max-width: 576px) {
+  .mobile-nav {
+    display: block;
+  }
+}
+
+.mobile-menu-items {
+  display: none;
+  /* display: block; */
+}
+
+
+
 /* Styling for the Headings and Text */
 
 h1, h2, h3, h5 {
