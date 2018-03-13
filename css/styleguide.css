@@ -165,123 +165,56 @@ input[type=text]:focus {
 
 /* Combined Elements */
 
-/* Credit: Overlay Hover http://jsfiddle.net/51csqs0b/1173/  */
-
 .project {
   padding-bottom: 15px;
 }
 
 .project-thumbnail {
   max-width: 100%;
+  display: block;
+  position: relative;
   height: auto;
-  /* transition: opacity .3s ease-out; */
 }
 
-.project-thumbnail:hover {
-  transition: opacity .3s ease-out;
-  opacity: 0.7;
+/* Credit: Image Overlay Fade In https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: 0; */
+  /* right: 0; */
+  height: 94%;
+  width: 94%;
+  opacity: 0.5;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.project:hover .thumbnail-overlay {
+  opacity: 0;
+}
+
+.thumbnail-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 h5.thumbnail-title {
- color: rgb(90,90,90);
+ color: white;
  text-align: center;
  padding-top: 10px;
 }
 
-/* .project-thumbnail-overlay:after, .project-thumbnail-overlay:before {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+h3.thumbnail-subtitle {
+  color: rgb(190,190,190);
+  font-size: 16px;
 }
-
-.project-thumbnail-overlay:after {
-    content:'\A';
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background:rgba(0,0,0,0.3);
-}
-
-.project-thumbnail-overlay:before {
-    content: attr(data-content);
-    width:100%;
-    color: white;
-    z-index: 1;
-  }
-
-.project-thumbnail-overlay:hover:after, .project-thumbnail-overlay:hover:before {
-    opacity: 1;
-} */
-
-/* Credit: Tint Overlay Hover http://jsbin.com/xiciwoyavi/edit?html,output */
-
-.tint {
-  position: relative;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.tint:before {
-  /* content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0, 0.3);
-  -moz-transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear; */
-
-  background: none;
-}
-
-.tint:hover:before{
-  /* background: none; */
-
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0, 0.3);
-  -moz-transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
-
-}
-
-/* .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0;
-  /* color: white; */
-}
-
-.overlay:hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: white;
-  opacity: 1;
-} */
-
-/* .overlay h3 {
-  color: white;
-}*/
 
 
 .project-header-image {
