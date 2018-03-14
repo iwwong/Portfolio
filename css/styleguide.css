@@ -204,21 +204,25 @@ input[type=text]:focus {
 
 .project-thumbnail {
   max-width: 100%;
+  height: auto;
   display: block;
   position: relative;
-  height: auto;
 }
 
 /* Credit: Image Overlay Fade In https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
+
+.project-images .project-item {
+  position: relative;
+}
 
 .thumbnail-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  /* left: 0; */
-  /* right: 0; */
-  height: 89%;
-  width: 94%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
   opacity: 0.5;
   transition: .5s ease;
   background-color: #000;
