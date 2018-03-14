@@ -1,3 +1,9 @@
+*,*::after,*::before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
 html {
   position: relative;
   height: 97%;
@@ -44,25 +50,38 @@ a.menu-item:hover, a.menu-item:focus, a.menu-item:after {
   display: none;
 }
 
-h4.menu-item {
-  color: #92A8D1;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  border: 2px solid #92A8D1;
-  padding: 0.4em 1.5em;
-}
-
 @media (max-width: 576px) {
   .mobile-nav {
     display: block;
   }
+  .primary-nav {
+    display: none;
+  }
 }
 
 .mobile-menu-items {
-  display: none;
-  /* display: block; */
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #92A8D1;
 }
 
+.mobile-menu-item{
+  display: block;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.15em;
+  color: rgb(90,90,90);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+a.mobile-menu-item {
+  color: rgb(90,90,90);
+}
+
+.mobile-menu-items .nav-current {
+  font-weight: 700;
+}
 
 
 /* Styling for the Headings and Text */
@@ -167,6 +186,7 @@ a.intext-link:hover, a.intext-link:focus {
 }
 
 .button {
+  display: block;
   background-color: white;
   font-family: 'Lato', sans-serif;
   color: #92A8D1;
@@ -174,14 +194,14 @@ a.intext-link:hover, a.intext-link:focus {
   letter-spacing: 0.15em;
   border: 2px solid #92A8D1;
   padding: 0.4em 1.5em;
+  width: 100%;
 
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .button:hover, .button:focus {
-  background-color: #92A8D1;
-  color: white;
+  cursor: pointer;
 }
 
 input {
@@ -254,10 +274,10 @@ h3.thumbnail-subtitle {
 }
 
 
-.project-header-image {
-  /* max-width: 100%; */
-  /* height: auto; */
-}
+/* .project-header-image {
+   max-width: 100%;
+   height: auto;
+} */
 
 .project-image {
   max-width: 100%;
