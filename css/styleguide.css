@@ -160,6 +160,7 @@ h5.process-title {
 
 a, a:hover, a:focus {
   text-decoration: none;
+  cursor: pointer;
 }
 
 p.process-analysis {
