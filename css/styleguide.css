@@ -230,6 +230,18 @@ input[type=text]:focus {
   position: relative;
 }
 
+@media (max-width:992px) {
+  .last-thumbnail {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:475px) {
+  .last-thumbnail {
+    margin-bottom: 40px;
+  }
+}
+
 /* Credit: Image Overlay Fade In https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
 
 .project-images .project-item {
