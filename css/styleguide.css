@@ -333,6 +333,20 @@ footer {
   width: 100%;
 }
 
+.footer-contact {
+  font-size: 13px;
+  text-align: center;
+}
+
+a.footer-contact {
+  text-decoration: none;
+  color: #92A8D1;
+}
+
+a.footer-contact:hover, a.footer-contact:focus {
+  color: rgb(90,90,90);
+}
+
 .footer-style {
   background-color: #92A8D1;
   color: #FFF;
@@ -401,4 +415,14 @@ footer {
 .about-image {
   max-width: 100%;
   height: auto;
+}
+
+/* .main-content {
+  padding-bottom: 100px;
+} */
+
+@media (max-width:478px) {
+  .main-content {
+    padding-bottom: 100px;
+  }
 }
