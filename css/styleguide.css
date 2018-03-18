@@ -201,6 +201,49 @@ a.intext-link:hover, a.intext-link:focus {
   transition: 0.3s;
 }
 
+.button2 {
+  display: block;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.4em 1.5em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button2:hover, .button2:focus {
+  cursor: pointer;
+  background-color: white;
+  color: #92A8D1;
+}
+
+@media (max-width:1200px) {
+  .button2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:1092px) {
+  .button2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:980px) {
+  .button2 {
+    font-size: 0.7rem;
+  }
+}
+
 .button:hover, .button:focus {
   cursor: pointer;
 }
@@ -220,7 +263,39 @@ input[type=text]:focus {
 /* Combined Elements */
 
 .project {
+  position: relative;
   padding-bottom: 30px;
+  background-color: #92A8D1;
+  height: 13.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width:1274px) {
+  .project {
+    height: 15rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width:1007px) {
+  .project {
+    height: 14rem;
+  }
+}
+
+@media (max-width:769px) {
+  .project {
+    height: 25rem;
+    /* margin-top: 2rem; */
+  }
+}
+
+@media (max-width:435px) {
+  .project {
+    height: 26rem;
+  }
 }
 
 .project-thumbnail {
@@ -228,6 +303,40 @@ input[type=text]:focus {
   height: auto;
   display: block;
   position: relative;
+}
+
+.project-thumbnail2 {
+  height: auto;
+  display: block;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2rem;
+  /* padding-top: -50px; */
+}
+
+@media (max-width:1274px) {
+  .project-thumbnail2 {
+    margin-top: -0.4rem;
+    width: 332px;
+  }
+}
+
+@media (max-width:1200px) {
+  .project-thumbnail2 {
+    /* margin-top: -0.4rem; */
+    padding-top: 1rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width:1003px) {
+  .project-thumbnail2 {
+    /* margin-top: -0.4rem; */
+    padding-top: 1rem;
+    max-width: 256px;
+  }
 }
 
 @media (max-width:992px) {
@@ -248,6 +357,10 @@ input[type=text]:focus {
   position: relative;
 }
 
+.project-images2 {
+  margin-top: 3rem;
+}
+
 .thumbnail-overlay {
   position: absolute;
   top: 0;
@@ -260,6 +373,21 @@ input[type=text]:focus {
   transition: .5s ease;
   background-color: #000;
 }
+
+/* .thumbnail-overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 40px;
+  height: 60%;
+  width: 100%;
+  background-color: #92A8D1;
+  opacity: 0.5;
+  transition: .5s ease;
+  background-color: #000;
+} */
 
 .project:hover .thumbnail-overlay {
   opacity: 0;
@@ -275,10 +403,30 @@ input[type=text]:focus {
   -ms-transform: translate(-50%, -50%);
 }
 
+.thumbnail-text2 {
+  position: relative;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+}
+
 h5.thumbnail-title {
  color: white;
  text-align: center;
  padding-top: 10px;
+}
+
+h5.thumbnail-title2 {
+ color: white;
+ text-align: center;
+ padding-top: 1rem;
+ font-size: 1.5rem;
+}
+
+@media (max-width:914px) {
+  h5.thumbnail-title2 {
+    font-size: 1.2rem;
+  }
 }
 
 h3.thumbnail-subtitle {
@@ -286,6 +434,31 @@ h3.thumbnail-subtitle {
   font-size: 16px;
 }
 
+h3.thumbnail-subtitle2 {
+  color: rgb(230,230,230);
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+h4.short-project-description {
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 1rem; */
+  color: rgb(230,230,230);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width:855px) {
+  h3.thumbnail-subtitle2 {
+    padding-bottom: 0.5rem;
+  }
+  .button2 {
+    margin-top: 1.5rem;
+  }
+}
 
 /* .project-header-image {
    max-width: 100%;
