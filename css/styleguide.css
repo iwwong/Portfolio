@@ -6,7 +6,7 @@
 
 html {
   position: relative;
-  height: 97%;
+  height: 100%;
 }
 
 body {
@@ -274,6 +274,8 @@ input[type=text]:focus {
 @media (max-width:1274px) {
   .project {
     height: 15rem;
+    margin-bottom: -2rem;
+
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -285,10 +287,22 @@ input[type=text]:focus {
   }
 }
 
-@media (max-width:769px) {
+@media (max-width:1007px) {
+  .project-gsc {
+    height: 15rem;
+  }
+}
+
+@media (max-width:767px) {
   .project {
     height: 25rem;
     /* margin-top: 2rem; */
+  }
+}
+
+@media (max-width:475px) {
+  .project-gsc {
+    height: 26.5rem;
   }
 }
 
@@ -296,6 +310,16 @@ input[type=text]:focus {
   .project {
     height: 26rem;
   }
+}
+
+@media (max-width:426px) {
+  .project {
+    height: 26.7rem;
+  }
+}
+
+.last-project {
+  padding-bottom: 4rem;
 }
 
 .project-thumbnail {
@@ -339,6 +363,15 @@ input[type=text]:focus {
   }
 }
 
+@media (max-width:767px) {
+  .left-text {
+    order: 2;
+  }
+  .right-image {
+    order: 1;
+  }
+}
+
 @media (max-width:992px) {
   .last-thumbnail {
     margin-bottom: 20px;
@@ -359,6 +392,7 @@ input[type=text]:focus {
 
 .project-images2 {
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .thumbnail-overlay {
@@ -498,7 +532,7 @@ h4.short-project-description {
 
 /* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
 footer {
-  position: absolute;
+  position: relative;
   right: 0px;
   bottom: 0px;
   left: 0px;
