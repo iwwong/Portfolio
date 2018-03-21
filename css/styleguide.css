@@ -610,11 +610,11 @@ h4.short-project-description {
   padding-bottom: 100px;
 } */
 
-/* @media (max-width:478px) {
-  .main-content {
+@media (max-width:432px) {
+  .about-content {
     padding-bottom: 100px;
   }
-} */
+}
 
 /* Footer Styling */
 /* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
@@ -625,6 +625,10 @@ footer {
   left: 0px;
   height: auto;
   width: 100%;
+}
+
+footer.short-page {
+  position: absolute;
 }
 
 .footer-contact {
