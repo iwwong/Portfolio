@@ -308,15 +308,11 @@ input[type=text]:focus {
 
 @media (max-width:435px) {
   .project {
-    height: 26rem;
+    height: 27rem;
   }
 }
 
-@media (max-width:426px) {
-  .project {
-    height: 26.7rem;
-  }
-}
+
 
 .last-project {
   padding-bottom: 4rem;
@@ -333,12 +329,37 @@ input[type=text]:focus {
   height: auto;
   display: block;
   position: relative;
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -2rem;
-  /* padding-top: -50px; */
 }
+
+@media (max-width:2562px) {
+  .project-thumbnail2 {
+    width: 75%;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width:1472px) {
+  .project-thumbnail2 {
+    margin-top: -1.6rem;
+    /* margin-top: -1rem; */
+  }
+}
+
+/* @media (max-width:1405px) {
+  .project-thumbnail2 {
+    margin-top: -1.4rem;
+  }
+} */
+
+/* @media (max-width:1329px) {
+  .project-thumbnail2 {
+    margin-top: -1.1rem;
+  }
+} */
 
 @media (max-width:1274px) {
   .project-thumbnail2 {
@@ -349,7 +370,6 @@ input[type=text]:focus {
 
 @media (max-width:1200px) {
   .project-thumbnail2 {
-    /* margin-top: -0.4rem; */
     padding-top: 1rem;
     max-width: 80%;
   }
@@ -357,7 +377,6 @@ input[type=text]:focus {
 
 @media (max-width:1003px) {
   .project-thumbnail2 {
-    /* margin-top: -0.4rem; */
     padding-top: 1rem;
     max-width: 256px;
   }
@@ -530,43 +549,6 @@ h4.short-project-description {
   background-color: #92A8D1;
 }
 
-/* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
-footer {
-  position: relative;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  height: auto;
-  width: 100%;
-}
-
-.footer-contact {
-  font-size: 13px;
-  text-align: center;
-}
-
-a.footer-contact {
-  text-decoration: none;
-  color: #92A8D1;
-}
-
-a.footer-contact:hover, a.footer-contact:focus {
-  color: rgb(90,90,90);
-}
-
-.footer-style {
-  background-color: #92A8D1;
-  color: #FFF;
-  text-align: center;
-  font-size: 12px;
-}
-
-.footer-link, .footer-link:hover, .footer-link:focus{
-  text-decoration: none;
-  color: white;
-}
-
-
 /* Project Page Styling */
 
 .project-section {
@@ -628,8 +610,45 @@ a.footer-contact:hover, a.footer-contact:focus {
   padding-bottom: 100px;
 } */
 
-@media (max-width:478px) {
+/* @media (max-width:478px) {
   .main-content {
     padding-bottom: 100px;
   }
+} */
+
+/* Footer Styling */
+/* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
+footer {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: auto;
+  width: 100%;
+}
+
+.footer-contact {
+  font-size: 13px;
+  text-align: center;
+}
+
+a.footer-contact {
+  text-decoration: none;
+  color: #92A8D1;
+}
+
+a.footer-contact:hover, a.footer-contact:focus {
+  color: rgb(90,90,90);
+}
+
+.footer-style {
+  background-color: #92A8D1;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-link, .footer-link:hover, .footer-link:focus{
+  text-decoration: none;
+  color: white;
 }
