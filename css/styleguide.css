@@ -17,7 +17,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Styling for Navigation */
+/* Styling for Navigation and Menu */
 
 nav {
   text-align: center;
@@ -50,13 +50,23 @@ a.menu-item:hover, a.menu-item:focus, a.menu-item:after {
   display: none;
 }
 
-@media (max-width: 576px) {
-  .mobile-nav {
-    display: block;
-  }
-  .primary-nav {
-    display: none;
-  }
+.menu-button {
+  display: block;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: #92A8D1;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  border: 2px solid #92A8D1;
+  padding: 0.4em 1.5em;
+  width: 100%;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-button:hover, .menu-button:focus {
+  cursor: pointer;
 }
 
 .mobile-menu-items {
@@ -83,6 +93,16 @@ a.mobile-menu-item {
   font-weight: 700;
 }
 
+/* Media Queries for Mobile Navigation */
+
+@media (max-width: 576px) {
+  .mobile-nav {
+    display: block;
+  }
+  .primary-nav {
+    display: none;
+  }
+}
 
 /* Styling for the Headings and Text */
 
@@ -95,7 +115,6 @@ h1 {
   letter-spacing: 0.15em;
   text-align: center;
   margin-top: 1.5rem;
-  /* margin-bottom: 1.5rem; */
   color: rgb(50,50,50);
 }
 
@@ -167,13 +186,13 @@ p.process-analysis {
   line-height: 2;
 }
 
-/* Styling for Sections */
+/* Styling for Styleguide Sections */
 
 .element {
   padding-bottom: 2rem;
 }
 
-/* INTERACTIVE ELEMENTS */
+/* Styling for Intext Links */
 
 .intext-link {
   color: #92A8D1;
@@ -186,22 +205,9 @@ a.intext-link:hover, a.intext-link:focus {
   text-decoration: none;
 }
 
+/* Styling for Buttons */
+
 .button {
-  display: block;
-  background-color: white;
-  font-family: 'Lato', sans-serif;
-  color: #92A8D1;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  border: 2px solid #92A8D1;
-  padding: 0.4em 1.5em;
-  width: 100%;
-
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.button2 {
   display: block;
   background-color: transparent;
   font-family: 'Lato', sans-serif;
@@ -220,47 +226,33 @@ a.intext-link:hover, a.intext-link:focus {
   transition: 0.3s;
 }
 
-.button2:hover, .button2:focus {
+.button:hover, .button:focus {
   cursor: pointer;
   background-color: white;
   color: #92A8D1;
 }
 
+/* Media Queries for Buttons */
+
 @media (max-width:1200px) {
-  .button2 {
+  .button {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width:1092px) {
-  .button2 {
+  .button {
     font-size: 0.8rem;
   }
 }
 
 @media (max-width:980px) {
-  .button2 {
+  .button {
     font-size: 0.7rem;
   }
 }
 
-.button:hover, .button:focus {
-  cursor: pointer;
-}
-
-input {
-  padding: 5px 10px;
-  border: grey solid 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  outline: none;
-}
-
-input[type=text]:focus {
-    border: 2px solid #92A8D1;
-}
-
-/* Combined Elements */
+/* Styling for Work page Projects */
 
 .project {
   position: relative;
@@ -269,6 +261,82 @@ input[type=text]:focus {
   height: 13.5rem;
   width: 100%;
   margin-top: 1rem;
+}
+
+.project-images {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.project-thumbnail {
+  height: auto;
+  display: block;
+  position: relative;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2rem;
+}
+
+.thumbnail-text {
+  position: relative;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h5.thumbnail-title {
+ color: white;
+ text-align: center;
+ padding-top: 1rem;
+ font-size: 1.5rem;
+}
+
+h3.thumbnail-subtitle {
+  color: rgb(230,230,230);
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+h4.short-project-description {
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 1rem; */
+  color: rgb(230,230,230);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.last-project {
+  padding-bottom: 4rem;
+}
+
+/* Media Queries for Work page Projects */
+
+@media (max-width:914px) {
+  h5.thumbnail-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:855px) {
+  h3.thumbnail-subtitle {
+    padding-bottom: 0.5rem;
+  }
+  .button {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .left-text {
+    order: 2;
+  }
+  .right-image {
+    order: 1;
+  }
 }
 
 @media (max-width:1274px) {
@@ -296,7 +364,6 @@ input[type=text]:focus {
 @media (max-width:767px) {
   .project {
     height: 25rem;
-    /* margin-top: 2rem; */
   }
 }
 
@@ -308,215 +375,45 @@ input[type=text]:focus {
 
 @media (max-width:435px) {
   .project {
-    height: 27rem;
+    height: 28rem;
   }
 }
 
-
-
-.last-project {
-  padding-bottom: 4rem;
-}
-
-.project-thumbnail {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-}
-
-.project-thumbnail2 {
-  height: auto;
-  display: block;
-  position: relative;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -2rem;
-}
-
 @media (max-width:2562px) {
-  .project-thumbnail2 {
+  .project-thumbnail {
     width: 75%;
     margin-top: -2rem;
   }
 }
 
 @media (max-width:1472px) {
-  .project-thumbnail2 {
+  .project-thumbnail {
     margin-top: -1.6rem;
-    /* margin-top: -1rem; */
   }
 }
 
-/* @media (max-width:1405px) {
-  .project-thumbnail2 {
-    margin-top: -1.4rem;
-  }
-} */
-
-/* @media (max-width:1329px) {
-  .project-thumbnail2 {
-    margin-top: -1.1rem;
-  }
-} */
-
 @media (max-width:1274px) {
-  .project-thumbnail2 {
+  .project-thumbnail {
     margin-top: -0.4rem;
     width: 332px;
   }
 }
 
 @media (max-width:1200px) {
-  .project-thumbnail2 {
+  .project-thumbnail {
     padding-top: 1rem;
     max-width: 80%;
   }
 }
 
 @media (max-width:1003px) {
-  .project-thumbnail2 {
+  .project-thumbnail {
     padding-top: 1rem;
     max-width: 256px;
   }
 }
 
-@media (max-width:767px) {
-  .left-text {
-    order: 2;
-  }
-  .right-image {
-    order: 1;
-  }
-}
-
-@media (max-width:992px) {
-  .last-thumbnail {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width:475px) {
-  .last-thumbnail {
-    margin-bottom: 40px;
-  }
-}
-
-/* Credit: Image Overlay Fade In https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
-
-.project-images .project-item {
-  position: relative;
-}
-
-.project-images2 {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
-
-.thumbnail-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  transition: .5s ease;
-  background-color: #000;
-}
-
-/* .thumbnail-overlay2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 40px;
-  height: 60%;
-  width: 100%;
-  background-color: #92A8D1;
-  opacity: 0.5;
-  transition: .5s ease;
-  background-color: #000;
-} */
-
-.project:hover .thumbnail-overlay {
-  opacity: 0;
-}
-
-.thumbnail-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.thumbnail-text2 {
-  position: relative;
-  display: inline;
-  text-align: center;
-  vertical-align: middle;
-}
-
-h5.thumbnail-title {
- color: white;
- text-align: center;
- padding-top: 10px;
-}
-
-h5.thumbnail-title2 {
- color: white;
- text-align: center;
- padding-top: 1rem;
- font-size: 1.5rem;
-}
-
-@media (max-width:914px) {
-  h5.thumbnail-title2 {
-    font-size: 1.2rem;
-  }
-}
-
-h3.thumbnail-subtitle {
-  color: rgb(190,190,190);
-  font-size: 16px;
-}
-
-h3.thumbnail-subtitle2 {
-  color: rgb(230,230,230);
-  font-size: 16px;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-h4.short-project-description {
-  font-family: 'Open Sans', sans-serif;
-  /* font-size: 1rem; */
-  color: rgb(230,230,230);
-  font-size: 0.8rem;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-@media (max-width:855px) {
-  h3.thumbnail-subtitle2 {
-    padding-bottom: 0.5rem;
-  }
-  .button2 {
-    margin-top: 1.5rem;
-  }
-}
-
-/* .project-header-image {
-   max-width: 100%;
-   height: auto;
-} */
+/* Styling for Project Pages  */
 
 .project-image {
   max-width: 100%;
@@ -527,29 +424,10 @@ h4.short-project-description {
   padding-top: 2em;
 }
 
-
 .project-description {
   padding-top: 2em;
   line-height: 2;
 }
-
-.circle {
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-.darkgrey {
-  background-color: rgb(90,90,90);
-}
-
-.blue {
-  background-color: #92A8D1;
-}
-
-/* Project Page Styling */
 
 .project-section {
   padding-bottom: 5rem;
@@ -565,6 +443,8 @@ h4.short-project-description {
   margin-right: 20%;
 }
 
+/* Media Queries for Project Pages */
+
 @media (max-width:992px) {
   .text-middle {
     margin-left: 0;
@@ -578,7 +458,6 @@ h4.short-project-description {
   }
 }
 
-/* Video Responsive Styling */
 /* Credit: How to embed Vimeo videos responsively: https://www.abeautifulsite.net/how-to-embed-youtubevimeo-videos-responsively */
 
 .embed-container {
@@ -599,24 +478,23 @@ h4.short-project-description {
 }
 
 
-/* About Page Styling */
+/* Styling for About Page */
 
 .about-image {
   max-width: 100%;
   height: auto;
 }
 
-/* .main-content {
-  padding-bottom: 100px;
-} */
+/* Media Queries for About Page */
 
 @media (max-width:432px) {
   .about-content {
+    padding-top: 20px;
     padding-bottom: 100px;
   }
 }
 
-/* Footer Styling */
+/* Styling for Footer */
 /* Credit: Footer Stick to Bottom of Page: https://codepen.io/cbracco/pen/zekgx */
 footer {
   position: relative;
@@ -655,4 +533,23 @@ a.footer-contact:hover, a.footer-contact:focus {
 .footer-link, .footer-link:hover, .footer-link:focus{
   text-decoration: none;
   color: white;
+}
+
+
+/* Styling for Styleguide Colour Palette */
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.darkgrey {
+  background-color: rgb(90,90,90);
+}
+
+.blue {
+  background-color: #92A8D1;
 }
