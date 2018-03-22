@@ -392,17 +392,35 @@ h4.short-project-description {
   }
 }
 
+@media (max-width:1288px) {
+  .project-thumbnail {
+    margin-top: -0.7rem;
+  }
+}
+
 @media (max-width:1274px) {
   .project-thumbnail {
-    margin-top: -0.4rem;
+    margin-top: -0.2rem;
     width: 332px;
   }
 }
 
 @media (max-width:1200px) {
   .project-thumbnail {
-    padding-top: 1rem;
+    padding-top: 0.2rem;
     max-width: 80%;
+  }
+}
+
+@media (max-width:1134px) {
+  .project-thumbnail {
+    padding-top: 0.7rem;
+  }
+}
+
+@media (max-width:1059px) {
+  .project-thumbnail {
+    padding-top: 0.9rem;
   }
 }
 
