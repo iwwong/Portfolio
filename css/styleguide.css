@@ -15,6 +15,7 @@ body {
   margin-left: 15%;
   margin-right: 15%;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 /* Styling for Navigation and Menu */
@@ -156,6 +157,10 @@ p {
   font-size: 14px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 code {
   font-family: monospace;
   font-size: 1em;
@@ -293,7 +298,7 @@ h5.thumbnail-title {
 }
 
 h3.thumbnail-subtitle {
-  color: rgb(230,230,230);
+  color: white;
   font-size: 16px;
   text-align: center;
   padding-bottom: 1rem;
@@ -302,7 +307,7 @@ h3.thumbnail-subtitle {
 h4.short-project-description {
   font-family: 'Open Sans', sans-serif;
   /* font-size: 1rem; */
-  color: rgb(230,230,230);
+  color: white;
   font-size: 0.8rem;
   text-align: center;
   margin-left: 10%;
@@ -337,6 +342,9 @@ h4.short-project-description {
   .right-image {
     order: 1;
   }
+  .project {
+    margin-top: 0;
+  }
 }
 
 @media (max-width:1274px) {
@@ -364,6 +372,12 @@ h4.short-project-description {
 @media (max-width:767px) {
   .project {
     height: 25rem;
+  }
+}
+
+@media (max-width:635px) {
+  .project {
+    height: 27rem;
   }
 }
 
