@@ -470,23 +470,18 @@ h4.short-project-description {
   height: auto;
 }
 
-.text-middle {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
 /* Media Queries for Project Pages */
 
 @media (max-width:992px) {
-  .text-middle {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .project-image {
     order: 1;
   }
   .project-info {
     order: 2;
+  }
+
+  .img-spacing {
+    padding-bottom: 2rem;
   }
 }
 
