@@ -261,7 +261,7 @@ a.intext-link:hover, a.intext-link:focus {
 
 .project {
   position: relative;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   background-color: #92A8D1;
   height: 13.5rem;
   width: 100%;
@@ -360,12 +360,35 @@ h4.short-project-description {
 @media (max-width:1007px) {
   .project {
     height: 14rem;
+
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
 @media (max-width:1007px) {
   .project-gsc {
     height: 15rem;
+  }
+}
+
+@media (max-width:870px) {
+  .project {
+    height: 14.5rem;
+  }
+
+  .project-gsc {
+    height: 16rem;
+  }
+}
+
+@media (max-width:855px) {
+  .project {
+    height: 14rem;
+  }
+
+  .project-gsc {
+    height: 15.5rem;
   }
 }
 
@@ -381,15 +404,19 @@ h4.short-project-description {
   }
 }
 
-@media (max-width:475px) {
+/* @media (max-width:475px) {
   .project-gsc {
     height: 26.5rem;
   }
-}
+} */
 
 @media (max-width:435px) {
   .project {
     height: 28rem;
+  }
+
+  .project-gsc {
+    height: 29.5rem;
   }
 }
 
