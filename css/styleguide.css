@@ -404,12 +404,6 @@ h4.short-project-description {
   }
 }
 
-/* @media (max-width:475px) {
-  .project-gsc {
-    height: 26.5rem;
-  }
-} */
-
 @media (max-width:435px) {
   .project {
     height: 28rem;
@@ -509,42 +503,6 @@ h4.short-project-description {
 
   .img-spacing {
     padding-bottom: 2rem;
-  }
-}
-
-/* Credit: How to embed Vimeo videos responsively: https://www.abeautifulsite.net/how-to-embed-youtubevimeo-videos-responsively */
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-}
-
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-/* Styling for About Page */
-
-.about-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media Queries for About Page */
-
-@media (max-width:432px) {
-  .about-content {
-    padding-top: 20px;
-    padding-bottom: 100px;
   }
 }
 
