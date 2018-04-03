@@ -353,6 +353,13 @@ a.intext-link:hover, a.intext-link:focus {
   }
 }
 
+@media (max-width:1510px) {
+  .project-thumbnail {
+    margin-top: -2rem;
+    width: 80%;
+  }
+}
+
 @media (max-width:1472px) {
   .project-thumbnail {
     /* margin-top: -3rem; */
@@ -556,6 +563,9 @@ a.intext-link:hover, a.intext-link:focus {
 @media (max-width:1199px) {
   .project-image{
     order: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-info {
     order: 2;
