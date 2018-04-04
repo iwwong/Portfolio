@@ -102,7 +102,7 @@ a.mobile-menu-item {
   .mobile-nav {
     display: block;
   }
-
+  
   .primary-nav {
     display: none;
   }
@@ -123,17 +123,18 @@ h1 {
 }
 
 h2{
-  font-weight: 400;
   letter-spacing: 0.15em;
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-
-h2.title {
   font-size: 28px;
   font-weight: 700;
   padding-bottom: 0px;
   color: #92A8D1;
+}
+
+h2.thumbnail-title {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 h3 {
@@ -151,27 +152,26 @@ h3.subtitle {
   font-size: 14px;
 }
 
+h3.thumbnail-subtitle {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 
-p {
-  font-size: 14px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-code {
-  font-family: monospace;
-  font-size: 1em;
-  background-color: #EEE;
-  color: #000000;
-  padding: 0.5em 0.75em;
-  display: inline-block;
-  margin-bottom: 1rem;
+h4.short-project-description {
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 1rem; */
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h5 {
@@ -185,6 +185,14 @@ h5.process-title {
   letter-spacing: 0.2em;
 }
 
+p {
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 a, a:hover, a:focus {
   text-decoration: none;
   cursor: pointer;
@@ -192,12 +200,6 @@ a, a:hover, a:focus {
 
 p.process-analysis {
   line-height: 2;
-}
-
-/* Styling for Styleguide Sections */
-
-.element {
-  padding-bottom: 2rem;
 }
 
 /* Styling for Intext Links */
@@ -282,7 +284,6 @@ a.intext-link:hover, a.intext-link:focus {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -2rem;
 }
 
 .thumbnail-text {
@@ -292,42 +293,139 @@ a.intext-link:hover, a.intext-link:focus {
   vertical-align: middle;
 }
 
-h5.thumbnail-title {
- color: white;
- text-align: center;
- padding-top: 1rem;
- font-size: 1.5rem;
-}
-
-h3.thumbnail-subtitle {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-h4.short-project-description {
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 0.8rem;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 .last-project {
   padding-bottom: 4rem;
 }
 
 /* Media Queries for Work page Projects */
 
+@media (min-width:1623px) {
+  .project-thumbnail {
+    margin-top: -3rem;
+    width: 75%;
+  }
+}
+
+@media (max-width:1623px) {
+  .project-thumbnail {
+    margin-top: -3rem;
+    width: 75%;
+  }
+}
+
+@media (max-width:1510px) {
+  .project-thumbnail {
+    margin-top: -2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width:1472px) {
+  .project-thumbnail {
+    width: 80%;
+  }
+}
+
+@media (max-width:1472px) {
+  .project-thumbnail {
+    margin-top: -1.9rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width:1288px) {
+  .project-thumbnail {
+    margin-top: -0.7rem;
+  }
+
+  .project-thumbnail {
+    width: 85%;
+    margin-top: -1.6rem;
+  }
+}
+
+@media (max-width:1274px) {
+  .project {
+    height: 17rem;
+    margin-bottom: -2rem;
+
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .project-thumbnail {
+    padding-top: 2rem;
+    width: 332px;
+  }
+
+  .thumbnail-text {
+    padding-top: 2rem;
+  }
+
+  h2.thumbnail-title {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width:1200px) {
+  .project-thumbnail {
+    padding-top: 2.5rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width:1166px) {
+  h2.thumbnail-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:1134px) {
+  .project-thumbnail {
+    padding-top: 2.8rem;
+  }
+}
+
+@media (max-width:1003px) {
+  .project-thumbnail {
+    max-width: 256px;
+  }
+}
+
 @media (max-width:914px) {
-  h5.thumbnail-title {
+  h2.thumbnail-title {
     font-size: 1.2rem;
+    padding-top: 2.9rem;
+  }
+
+  h2.gsc-title {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width:870px) {
+  .project {
+    height: 16rem;
+  }
+
+  .project-gsc {
+    height: 17.5rem;
+  }
+
+  h2.thumbnail-title {
+    padding-top: 1.7rem;
   }
 }
 
 @media (max-width:855px) {
+  .project {
+    height: 15rem;
+  }
+
+  .project-gsc {
+    height: 16.2rem;
+  }
+
   h3.thumbnail-subtitle {
     padding-bottom: 0.5rem;
   }
@@ -348,63 +446,19 @@ h4.short-project-description {
 
   .project {
     margin-top: 0;
+    height: 26.5rem;
   }
 }
 
-@media (max-width:1274px) {
-  .project {
-    height: 15rem;
-    margin-bottom: -2rem;
-
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-}
-
-@media (max-width:1007px) {
-  .project {
-    height: 14rem;
-
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-}
-
-@media (max-width:1007px) {
-  .project-gsc {
-    height: 15rem;
-  }
-}
-
-@media (max-width:870px) {
-  .project {
-    height: 14.5rem;
-  }
-
-  .project-gsc {
-    height: 16rem;
-  }
-}
-
-@media (max-width:855px) {
-  .project {
-    height: 14rem;
-  }
-
-  .project-gsc {
-    height: 15.5rem;
-  }
-}
-
-@media (max-width:767px) {
-  .project {
-    height: 25rem;
-  }
-}
-
-@media (max-width:635px) {
+@media (max-width:525px) {
   .project {
     height: 27rem;
+  }
+}
+
+@media (max-width:475px) {
+  h2.thumbnail-title {
+    font-size: 1.1rem;
   }
 }
 
@@ -415,58 +469,6 @@ h4.short-project-description {
 
   .project-gsc {
     height: 29.5rem;
-  }
-}
-
-@media (max-width:2562px) {
-  .project-thumbnail {
-    width: 75%;
-    margin-top: -2rem;
-  }
-}
-
-@media (max-width:1472px) {
-  .project-thumbnail {
-    margin-top: -1.6rem;
-  }
-}
-
-@media (max-width:1288px) {
-  .project-thumbnail {
-    margin-top: -0.7rem;
-  }
-}
-
-@media (max-width:1274px) {
-  .project-thumbnail {
-    margin-top: -0.2rem;
-    width: 332px;
-  }
-}
-
-@media (max-width:1200px) {
-  .project-thumbnail {
-    padding-top: 0.2rem;
-    max-width: 80%;
-  }
-}
-
-@media (max-width:1134px) {
-  .project-thumbnail {
-    padding-top: 0.7rem;
-  }
-}
-
-@media (max-width:1059px) {
-  .project-thumbnail {
-    padding-top: 0.9rem;
-  }
-}
-
-@media (max-width:1003px) {
-  .project-thumbnail {
-    padding-top: 1rem;
-    max-width: 256px;
   }
 }
 
@@ -497,6 +499,19 @@ h4.short-project-description {
 
 /* Media Queries for Project Pages */
 
+@media (max-width:1199px) {
+  .project-image{
+    order: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-info {
+    order: 2;
+  }
+}
+
 @media (max-width:992px) {
   .project-image {
     order: 1;
@@ -508,6 +523,42 @@ h4.short-project-description {
 
   .img-spacing {
     padding-bottom: 2rem;
+  }
+}
+
+/* Credit: How to embed Vimeo videos responsively: https://www.abeautifulsite.net/how-to-embed-youtubevimeo-videos-responsively */
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Styling for About Page */
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for About Page */
+
+@media (max-width:432px) {
+  .about-content {
+    padding-top: 20px;
+    padding-bottom: 100px;
   }
 }
 
@@ -552,35 +603,4 @@ a.footer-contact:hover, a.footer-contact:focus {
 .footer-link, .footer-link:hover, .footer-link:focus{
   text-decoration: none;
   color: white;
-}
-
-
-/* Styling for Styleguide Colour Palette */
-
-.circle {
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-  display: inline-block;
-  padding-right: 20px;
-}
-
-.background {
-  width: 50%;
-  height: auto;
-  display: block;
-  padding: 1em;
-}
-
-.darkgrey {
-  background-color: rgb(90,90,90);
-}
-
-.blue {
-  background-color: #92A8D1;
-}
-
-.white {
-  background-color: #FFF;
-  border: 1px solid rgb(90,90,90);
 }

@@ -13,14 +13,8 @@ https://getbootstrap.com/docs/4.0/layout/grid/
     <!-- Bootstrap CSS - Credit: https://getbootstrap.com/docs/4.0/getting-started/introduction/-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/styleguide.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-dist.css">
 
     <title>About</title>
   </head>
@@ -33,7 +27,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
 
         <nav>
           <div class="mobile-nav">
-            <button class="button">MENU</button>
+            <button class="menu-button">MENU</button>
             <div class="mobile-menu-items" style="display:none;">
               <a href="work.html" class="mobile-menu-item">WORK
               </a>
@@ -61,28 +55,28 @@ https://getbootstrap.com/docs/4.0/layout/grid/
       </header>
 
       <main>
-        <div class="row">
-          <div class="col-lg-6 project">
-                <img class="about-image img-responsive" src="img/Iris.jpg" alt="Placeholder image">
-          </div>
+        <section>
+          <div class="row">
+            <div class="col-lg-6">
+                <img class="about-image img-spacing img-responsive" src="img/Iris.jpg" alt="Placeholder image">
+            </div>
 
-          <div class="col-lg-6 project-section main-content">
-            <h5 class="process-title">HI, I'M IRIS!</h5>
-            <p class="process-analysis">
-              I’m a visual designer and social media coordinator from Vancouver, Canada. Previously, I worked at Simon Fraser University (SFU) as a Design and Marketing Coordinator.
-            </p>
-            <p class="process-analysis">
-              I'm really passionate about creating simple yet, meaningful designs. Currently, I'm a fifth year student at SFU majoring in Interactive Arts & Technology and minoring in Print and Digital Publishing.
-            </p>
-            <p class="process-analysis">
-              I’m also a social media coordinator for my food photography Instagram, <a href="http://www.instagram.com/guacarons" class="intext-link">Guacarons</a> where I share visually appealing images of food and collaborate with restaurants and companies to create strategic promotional content.
-            </p>
+            <div class="col-lg-6 project-section about-content">
+              <h5 class="process-title">HI, I'M IRIS!</h5>
+              <p class="process-analysis">
+                I’m a visual designer and social media coordinator from Vancouver, Canada. Previously, I worked at Simon Fraser University (SFU) as a Design and Marketing Coordinator.
+              </p>
+              <p class="process-analysis">
+                I'm really passionate about creating simple yet, meaningful designs. Currently, I'm a fifth year student at SFU majoring in Interactive Arts & Technology and minoring in Print and Digital Publishing.
+              </p>
+              <p class="process-analysis">
+                I’m also a social media coordinator for my food photography Instagram, <a href="http://www.instagram.com/guacarons" class="intext-link">Guacarons</a> where I share visually appealing images of food and collaborate with restaurants and companies to create strategic promotional content.
+              </p>
+            </div>
           </div>
-        </div>
-
+        </section>
       </main>
-
-      <footer role="contentinfo">
+      <footer class="short-page">
         <p class="footer-contact">Let's chat! Get in touch with me at <a href="mailto:iwwong@sfu.ca" class="footer-contact"> iwwong@sfu.ca</a></p>
         <div class="row footer-style">
           <div class="col-sm-12">
@@ -93,7 +87,6 @@ https://getbootstrap.com/docs/4.0/layout/grid/
           </div>
         </div>
       </footer>
-
     </div>
 
   </body>
