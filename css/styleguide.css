@@ -1,3 +1,5 @@
+/* General Styling */
+
 *,*::after,*::before {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -100,6 +102,7 @@ a.mobile-menu-item {
   .mobile-nav {
     display: block;
   }
+
   .primary-nav {
     display: none;
   }
@@ -261,7 +264,6 @@ a.intext-link:hover, a.intext-link:focus {
 
 .project {
   position: relative;
-  /* padding-bottom: 30px; */
   background-color: #92A8D1;
   height: 13.5rem;
   width: 100%;
@@ -306,7 +308,6 @@ h3.thumbnail-subtitle {
 
 h4.short-project-description {
   font-family: 'Open Sans', sans-serif;
-  /* font-size: 1rem; */
   color: white;
   font-size: 0.8rem;
   text-align: center;
@@ -330,6 +331,7 @@ h4.short-project-description {
   h3.thumbnail-subtitle {
     padding-bottom: 0.5rem;
   }
+
   .button {
     margin-top: 1.5rem;
   }
@@ -339,9 +341,11 @@ h4.short-project-description {
   .left-text {
     order: 2;
   }
+
   .right-image {
     order: 1;
   }
+
   .project {
     margin-top: 0;
   }
@@ -497,6 +501,7 @@ h4.short-project-description {
   .project-image {
     order: 1;
   }
+
   .project-info {
     order: 2;
   }
