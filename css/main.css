@@ -506,13 +506,6 @@ a.intext-link:hover, a.intext-link:focus {
   height: auto;
 }
 
-.narrow-column {
-  /* margin-left: 30px; */
-  /* margin-right: 50px; */
-  /* margin-left: 20%;
-margin-right: 20%; */
-}
-
 /* Media Queries for Project Pages */
 
 @media (max-width:1199px) {
