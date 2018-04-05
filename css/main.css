@@ -102,7 +102,7 @@ a.mobile-menu-item {
   .mobile-nav {
     display: block;
   }
-  
+
   .primary-nav {
     display: none;
   }
@@ -168,7 +168,7 @@ h4.short-project-description {
   font-family: 'Open Sans', sans-serif;
   /* font-size: 1rem; */
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -186,7 +186,7 @@ h5.process-title {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .bold {
@@ -230,7 +230,7 @@ a.intext-link:hover, a.intext-link:focus {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -358,6 +358,10 @@ a.intext-link:hover, a.intext-link:focus {
     width: 332px;
   }
 
+  .button {
+    margin-top: 2rem;
+  }
+
   .thumbnail-text {
     padding-top: 2rem;
   }
@@ -415,6 +419,10 @@ a.intext-link:hover, a.intext-link:focus {
   h2.thumbnail-title {
     padding-top: 1.7rem;
   }
+
+  h4.short-project-description {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width:855px) {
@@ -428,6 +436,7 @@ a.intext-link:hover, a.intext-link:focus {
 
   h3.thumbnail-subtitle {
     padding-bottom: 0.5rem;
+    font-size: 14px;
   }
 
   .button {
@@ -495,6 +504,13 @@ a.intext-link:hover, a.intext-link:focus {
 .persona-image {
   max-width: 100%;
   height: auto;
+}
+
+.narrow-column {
+  /* margin-left: 30px; */
+  /* margin-right: 50px; */
+  /* margin-left: 20%;
+margin-right: 20%; */
 }
 
 /* Media Queries for Project Pages */
