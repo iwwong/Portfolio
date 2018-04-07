@@ -20,6 +20,14 @@ body {
   font-weight: 400;
 }
 
+/* Media Queries for General Styling */
+@media (max-width: 422px) {
+  .wider-margins {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+}
+
 /* Styling for Navigation and Menu */
 
 nav {
@@ -554,6 +562,9 @@ a.intext-link:hover, a.intext-link:focus {
   height: 100%;
 }
 
+iframe{
+  border: 0px;
+}
 
 /* Styling for About Page */
 

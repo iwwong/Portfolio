@@ -13,7 +13,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
     <!-- Bootstrap CSS - Credit: https://getbootstrap.com/docs/4.0/getting-started/introduction/-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styleguide-dist.css">
 
     <title>Styleguide</title>
@@ -312,7 +312,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                       &lt;div class="row"&gt;<br>
                         &lt;div class="col-md-6"&gt;<br>
                           &lt;a href="fantuan-delivery.html"&gt;<br>
-                          &lt;img class="project-thumbnail" src="img/fantuan-thumbnail2.png" alt="Fantuan Delivery Project"&gt;<br>
+                          &lt;img class="project-thumbnail" src="img/fantuan-thumbnail.png" alt="Fantuan Delivery Project"&gt;<br>
                           &lt;/a&gt;<br>
                         &lt;/div&gt;<br>
 
@@ -338,7 +338,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                     <div class="row">
                       <div class="col-md-6">
                         <a href="fantuan-delivery.html">
-                        <img class="project-thumbnail" src="img/fantuan-thumbnail2.png" alt="Fantuan Delivery Project">
+                        <img class="project-thumbnail" src="img/fantuan-thumbnail.png" alt="Fantuan Delivery Project">
                         </a>
                       </div>
 
@@ -381,13 +381,13 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                 <h3>Project Introduction</h3>
 
                 <h4>CSS Selector:</h4>
-                <p>.title, .subtitle, .project-info, .project-description, .project-header-image, .img-responsive</p>
+                <p>.subtitle, .project-info, .project-section .project-description, .project-image, .img-responsive</p>
 
                 <h4>Sample Code:</h4>
                 <code>
                   &lt;div class="row"&gt;<br>
-                  &lt;div class="col-lg-12"&gt;<br>
-                  &lt;h2 class="title"&gt;FANTUAN DELIVERY&lt;/h2&gt;<br>
+                  &lt;div class="col-xl-12"&gt;<br>
+                  &lt;h2&gt;FANTUAN DELIVERY&lt;/h2&gt;<br>
                   &lt;h3 class="subtitle"&gt;interface design&lt;/h3&gt;<br>
                   &lt;/div&gt;<br>
                   &lt;/div&gt;<br>
@@ -403,8 +403,8 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                   Fantuan delivery is a local food delivery company.
                   &lt;/p&gt;<br>
                   &lt;/div&gt;<br>
-                  &lt;div class="col-lg-8"&gt;<br>
-                  &lt;img class="project-image img-response" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens"&gt;<br>
+                  &lt;div class="col-xl-8"&gt;<br>
+                  &lt;img class="project-image img-responsive" src="img/fantuan-projectheader.png" alt="Fantuan Delivery iPhone Screens"&gt;<br>
                   &lt;/div&gt;<br>
                   &lt;/div&gt;<br>
                 </code>
@@ -414,13 +414,13 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                 https://getbootstrap.com/docs/4.0/content/images/ -->
 
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-xl-12">
                     <h2 class="title">FANTUAN DELIVERY</h2>
                     <h3 class="subtitle">interface design</h3>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-4 project-info">
+                <div class="row project-section">
+                  <div class="col-xl-4 project-info">
                     <h5>ROLE</h5>
                     <p>Research, Interface Design, Photography, Video</p>
                     <h5>TOOLS</h5>
@@ -429,11 +429,11 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                     <p>Wan-Teen Yang, Linan Zhang</p>
 
                     <p class="project-description">
-                      Fantuan Delivery is a local food delivery company. Using various research methods like interviews, cultural probes, personas and participatory workshops, we created a cohesive cross-platform application that connects Fantuan's customers, delivery drivers, partner restaurants and customer service together to streamline their communication and improve their routine.
+                      Fantuan Delivery is a local food delivery company. Using various research methods like interviews, cultural probes, personas and participatory workshops, <span class="bold">we created a cohesive cross-platform application that connects Fantuan's customers, delivery drivers, partner restaurants and customer service together to streamline their communication and improve their routine.</span>
                     </p>
                   </div>
-                  <div class="col-lg-8">
-                    <img class="project-image img-responsive" src="img/project-header1.png" alt="Fantuan Delivery iPhone Screens">
+                  <div class="col-xl-8">
+                    <img class="project-image img-responsive" src="img/fantuan-projectheader.png" alt="Fantuan Delivery iPhone Screens">
                   </div>
                 </div>
               </section>
@@ -465,7 +465,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
 
                 <h4>Sample Code:</h4>
                 <code>
-                  &lt;footer role="contentinfo"&gt;<br>
+                  &lt;footer&gt;<br>
                   &lt;p class="footer-contact"&gt;Let's chat! Get in touch with me at&lt;a href="mailto:iwwong@sfu.ca" class="footer-contact"&gt;<br>
                   &lt;div class="row"&gt;<br>
                   &lt;div class="col-sm-12 footer-style"&gt;<br>
@@ -479,7 +479,7 @@ https://getbootstrap.com/docs/4.0/layout/grid/
                 </code>
 
                 <h4>Rendered Element:</h4>
-                <footer role="contentinfo">
+                <footer>
                   <p class="footer-contact">Let's chat! Get in touch with me at <a href="mailto:iwwong@sfu.ca" class="footer-contact"> iwwong@sfu.ca</a></p>
                   <div class="row">
                     <div class="col-sm-12 footer-style">
@@ -502,8 +502,9 @@ https://getbootstrap.com/docs/4.0/layout/grid/
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/mobileNav.js"></script>
+
   </body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/mobileNav.js"></script>
 </html>
